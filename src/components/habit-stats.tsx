@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { LinearProgress, Paper, Typography } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch, RootState } from "../store/store";
-import { fetchHabits } from "../store/habitSlice";
+import { fetchHabits, Habit } from "../store/habitSlice";
 
 const HabitStats: React.FC = () => {
   const { habits, isLoading, error } = useSelector(

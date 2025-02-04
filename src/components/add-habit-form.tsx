@@ -12,11 +12,13 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../store/store";
 import { addHabit } from "../store/habitSlice";
 
+type Frequency = "daily"  | "weekly";
+
 const AddHabitForm: React.FC = () => {
 
-  const [name, setName] = useState<String>("");
+  const [name, setName] = useState("");
 
-  const [frequency, setFrequency] = useState<String>("daily");
+  const [frequency, setFrequency] = useState<Frequency>("daily");
 
   const dispatch = useDispatch<AppDispatch>();
 
