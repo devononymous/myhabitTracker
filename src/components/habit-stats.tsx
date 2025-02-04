@@ -5,7 +5,7 @@ import { AppDispatch, RootState } from "../store/store";
 import { fetchHabits, Habit } from "../store/habitSlice";
 
 const HabitStats: React.FC = () => {
-  const { habits, isLoading, error } = useSelector(
+  const { habits, isLoading } = useSelector(
     (state: RootState) => state.habits
   );
   const dispatch = useDispatch<AppDispatch>();
